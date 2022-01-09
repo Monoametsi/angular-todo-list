@@ -1,0 +1,13 @@
+.delete-btn{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.delete-btn button{
+	font-size: 1rem;
+	padding: 6px 10px;
+}
+
+.delete-btn span{
+	padding-left: 8px;
+}

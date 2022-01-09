@@ -25,6 +25,7 @@ app-root{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: #ddd;
 	padding: 12px 18px;
 	outline: none;
 	border: none;
@@ -38,4 +39,8 @@ app-root{
 	color: #fff;
 	background-color: #7CB9E8;
 	box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.delete-btn button{
+	font-family: "Poppins", sans-serif;
 }

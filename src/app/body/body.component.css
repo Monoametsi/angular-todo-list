@@ -1,0 +1,27 @@
+.body-cont{
+	flex-direction: column;
+	padding-bottom: 1.5rem;
+}
+
+.task-cont, .body-cont, .left, .right{
+	display: flex;
+}
+
+.task-cont:first-child{
+	border-top: 1px solid #ddd;
+}
+
+.task-cont{
+	padding: 8px;
+	border-bottom: 1px solid #ddd;
+	justify-content: space-between;
+}
+
+.left span:first-child, .right  span:first-child{
+	padding-right: 8px;
+}
+
+.left, .right{
+	align-items: center;
+	justify-content: center;
+}
