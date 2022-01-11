@@ -11,5 +11,4 @@ export class InputFieldComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

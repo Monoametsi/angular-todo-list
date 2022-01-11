@@ -17,8 +17,17 @@
 	justify-content: space-between;
 }
 
-.left span:first-child, .right  span:first-child{
-	padding-right: 8px;
+.right  fa-icon:first-child, .left span:first-child{
+	padding-right: 1rem;
+}
+
+fa-icon{
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+fa-icon:hover{
+	color: #7CB9E8;
 }
 
 .left, .right{

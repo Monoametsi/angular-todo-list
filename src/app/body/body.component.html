@@ -1,37 +1,15 @@
 <div class="body-cont">
-	<div class="task-cont">
+	<div class="task-cont" *ngFor="let task of taskArr">
 		<div class="left">
-			<span>Checkbox</span>
-			<span>Task</span>
+			<span>
+				<app-checkbox></app-checkbox>
+			</span>
+			<span>{{ task.task }}</span>
 		</div>
 		
 		<div class="right">
-			<span>Update Icon</span>
-			<span>Delete Icon</span>
-		</div>
-	</div>
-	
-	<div class="task-cont">
-		<div class="left">
-			<span>Checkbox</span>
-			<span>Task</span>
-		</div>
-		
-		<div class="right">
-			<span>Update Icon</span>
-			<span>Delete Icon</span>
-		</div>
-	</div>
-	
-	<div class="task-cont">
-		<div class="left">
-			<span>Checkbox</span>
-			<span>Task</span>
-		</div>
-		
-		<div class="right">
-			<span>Update Icon</span>
-			<span>Delete Icon</span>
+			<fa-icon [icon]="faPencilIcon"></fa-icon>
+			<fa-icon [icon]="faTimesIcon"></fa-icon>
 		</div>
 	</div>
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faTimesCircle } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-footer',
@@ -11,6 +12,8 @@ export class FooterComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  faTimesIcon = faTimesCircle;
    
   text: string = "Remove Selected";
 }
