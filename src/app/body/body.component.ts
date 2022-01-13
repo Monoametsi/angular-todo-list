@@ -13,13 +13,13 @@ import { tasks } from '../tasks';
 export class BodyComponent implements OnInit {
   
   constructor(private servicesService: ServicesService) { }
-  
-  ngOnInit(): void {
-    this.allTasks = this.servicesService.getTasks();
-  }
+  allTasks: Task[] = [];
 
+  ngOnInit(): void {
+   this.servicesService.getTasks().subscribe(tasks => this.allTasks = tasks);
+  }
+  
   faTimesIcon = faTimesCircle;
   faPencilIcon = faPencilAlt;
-  allTasks: Task[] = [];
 
 }
