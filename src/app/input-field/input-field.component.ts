@@ -23,7 +23,7 @@ export class InputFieldComponent implements OnInit {
   }
   
   addTask(){
-	if(this.formValue.value.task.trim().length === 0){
+	if(!this.formValue.value.task || this.formValue.value.task.length === 0 || this.formValue.value.task.trim().length === 0){
 		alert("You need to fill the field!!!")
 	}else{ 
 		this.servicesService.addTask(this.formValue.value.task).subscribe((tasks) => {
