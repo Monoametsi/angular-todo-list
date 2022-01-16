@@ -1,4 +1,4 @@
-<div class="btn-cont delete-btn">
+<div class="btn-cont delete-btn" *ngIf="task.length > 0">
 	<button>
 		{{ text }}
 		<fa-icon [icon]="faTimesIcon"></fa-icon>
