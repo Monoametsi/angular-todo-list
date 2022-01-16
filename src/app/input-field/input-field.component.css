@@ -1,6 +1,5 @@
 .inputField-cont{
 	display: flex;
-	padding-right: 8px;
 }
 
 .inputField, .inputField-cont{
@@ -8,6 +7,7 @@
 }
 
 .inputField{
+	margin-right: 8px;
 	text-align: center;
 	font-family: "Poppins", sans-serif;
 	font-size: 1rem;

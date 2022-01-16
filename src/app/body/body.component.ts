@@ -21,5 +21,8 @@ export class BodyComponent implements OnInit {
   
   faTimesIcon = faTimesCircle;
   faPencilIcon = faPencilAlt;
-
+	
+  deleteTask(task: Task){
+	this.servicesService.removeTask(task).subscribe(tasks => this.allTasks = tasks);
+  }
 }

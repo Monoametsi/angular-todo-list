@@ -1,3 +1,4 @@
-<div class="inputField-cont">
-	<input type="text" name="task" placeholder="What needs to be done?" class="inputField">
+<div class="inputField-cont" [formGroup]="formValue">
+	<input type="text" formControlName="task" placeholder="What needs to be done?" class="inputField">
+	<app-add-button (btnClick)="addTask()"></app-add-button>
 </div>
