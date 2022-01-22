@@ -14,14 +14,14 @@ export class BodyComponent implements OnInit {
   
   constructor(private servicesService: ServicesService) { }
   allTasks: Task[] = [];
-
+  
   ngOnInit(): void {
    this.servicesService.getTasks().subscribe(tasks => this.allTasks = tasks);
   }
   
   faTimesIcon = faTimesCircle;
   faPencilIcon = faPencilAlt;
-	
+  
   deleteTask(task: Task){
 	this.servicesService.removeTask(task).subscribe(tasks => this.allTasks = tasks);
   }

@@ -1,4 +1,4 @@
 <div class="inputField-cont" [formGroup]="formValue">
-	<input type="text" formControlName="task" placeholder="What needs to be done?" class="inputField">
+	<input type="text" formControlName="task" (keydown)="addTaskOnEnter($event)" placeholder="What needs to be done?" class="inputField">
 	<app-add-button (btnClick)="addTask()"></app-add-button>
 </div>

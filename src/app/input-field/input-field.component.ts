@@ -32,4 +32,10 @@ export class InputFieldComponent implements OnInit {
 	}
   }
   
+  addTaskOnEnter(event: any){
+	 if(event.key === 'Enter'){
+		  this.addTask();
+	  }
+  }
+  
 }
