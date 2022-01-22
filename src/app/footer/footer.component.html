@@ -1,5 +1,5 @@
 <div class="btn-cont delete-btn" *ngIf="task.length > 0">
-	<button>
+	<button (click)="onClick(selectedtask)">
 		{{ text }}
 		<fa-icon [icon]="faTimesIcon"></fa-icon>
 	</button>
