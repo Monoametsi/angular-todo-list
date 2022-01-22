@@ -2,7 +2,7 @@
 	<div class="task-cont" *ngFor="let task of allTasks">
 		<div class="left">
 			<span>
-				<app-checkbox></app-checkbox>
+				<app-checkbox [task]="task"></app-checkbox>
 			</span>
 			<span>{{ task.task }}</span>
 		</div>
