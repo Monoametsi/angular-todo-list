@@ -11,6 +11,7 @@ import { InputFieldComponent } from './input-field/input-field.component';
 import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
+import { UpdateBtnComponent } from './update-btn/update-btn.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
     InputFieldComponent,
     BodyComponent,
     FooterComponent,
-    CheckboxComponent
+    CheckboxComponent,
+    UpdateBtnComponent
   ],
   imports: [
     BrowserModule,
