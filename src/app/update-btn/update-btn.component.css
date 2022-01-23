@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i%20|%20Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i%20|%20Hind:300,400,500,600,700');
+
+fa-icon{
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+fa-icon:hover{
+	color: #7CB9E8;
+}
+
+.modal-cont{
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 50;
+}
+
+.modal-form-cont{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	max-width: 600px;
+	/* background-color: red; */
+	padding: 1rem;
+}
+
+.form-cont{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
+	max-width: 600px;
+	/* padding: 1rem; */
+	border-radius: 5px;
+}
+
+.form-header-cont{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #ddd;
+	margin: 1rem 0;
+}
+
+.form-title-cont h1{
+	font-family: montserrat, sans-serif;
+	padding: 1rem;
+	margin: 0;
+	font-size: 1.5rem;
+}
+
+.form-closer-cont fa-icon{
+	padding: 1rem;
+	cursor: pointer;
+	font-size: 1.3rem;
+	color: red;
+	margin: 0;
+	transition: 0.3s;
+}
+
+.form{
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 1rem;
+}
+
+.input-cont{
+	padding: 0 1rem;
+	margin-bottom: 1.5rem;
+}
+
+.input-cont, .form{
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+}
+
+.form-closer-cont fa-icon:hover{
+	opacity: 0.6;
+}
+
+.input-field{
+	outline: none;
+	border: none;
+	padding: 8px;
+	margin-top: 5px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	transition: 0.3s;
+}
+
+.input-field:focus{
+	border: 1px solid rgb(13, 110, 253);
+}
+
+.sub-btn-cont{
+	width: 100%;
+	padding: 0 1rem;
+	margin-bottom: 1rem;
+}
+
+.sub-btn{
+	text-align: center;
+	font-size: 1.2rem;
+	width: 100%;
+	padding: 6px;
+	font-weight: bold;
+	border-radius: 5px;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	background-color: rgb(13, 110, 253);
+	font-family: montserrat, sans-serif;
+	transition: 0.3s;
+}
+
+.sub-btn:hover{
+	background-color: #7CB9E8;
+	color: black;
+	box-shadow: 0px 0px 7px rgba(0,0,0,0.5);
+}
+
+span{
+	width: 100%;
+	margin-bottom: 1rem;
+	border-bottom: 0.5px solid #ddd;
+}

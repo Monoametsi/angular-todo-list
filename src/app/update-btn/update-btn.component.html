@@ -1,0 +1,30 @@
+<fa-icon [icon]="faPencilIcon" (click)="OpenModal(); onUpdate(task)"></fa-icon>
+
+<div class="modal-cont" *ngIf="modalOpen" (click)="closeModalEvent($event)" id="modal-cont"> 
+    <div class="modal-form-cont">
+        <div class="form-cont">
+            <div class="form-header-cont">
+                <div class="form-title-cont">
+                    <h1>Update Task</h1>
+                </div>
+
+                <div class="form-closer-cont">
+                    <fa-icon [icon]="closeModalIcon" (click)="closeModal()" id="modal-closer"></fa-icon>
+                </div>
+            </div>
+            
+            <form class="form" [formGroup]="formValue">
+
+                <div class="input-cont">
+                    <label for="name">Task</label>
+                    <input type="text" formControlName="task" placeholder="Enter Task" id="task" name="task" class="input-field">
+                </div>
+                
+                <span></span>
+                
+                <div class="sub-btn-cont">
+                    <input type="button" value="Update" class="sub-btn" (click)="updateTask(task)">
+                </div>
+            </form>
+        </div>
+    </div>
