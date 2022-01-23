@@ -41,9 +41,18 @@ export class ServicesService {
 	};
 	
 	const taskIndex: number = tasks.findIndex(findIndex);
-	console.log(task);
 	tasks.splice(taskIndex, 1);
 	return of(tasks);
+  }
+  
+  updateTask(taskToUpdate: Task): Observable<Task[]>{
+	 tasks.forEach((task) => {
+		 if(task.id === taskToUpdate.id){
+			 task = taskToUpdate;
+		 }
+	 })
+	 
+	 return of(tasks);
   }
 	
 }
