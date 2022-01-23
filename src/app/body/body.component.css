@@ -17,7 +17,7 @@
 	justify-content: space-between;
 }
 
-.right  fa-icon:first-child, .left span:first-child{
+.right  fa-icon:first-child, app-update-btn, .left span:first-child{
 	padding-right: 1rem;
 }
 
