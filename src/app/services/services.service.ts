@@ -41,7 +41,9 @@ export class ServicesService {
 	};
 	
 	const taskIndex: number = tasks.findIndex(findIndex);
+	console.log(task);
 	tasks.splice(taskIndex, 1);
 	return of(tasks);
   }
+	
 }

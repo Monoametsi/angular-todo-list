@@ -9,7 +9,6 @@ import { selectedTasks } from '../selected-tasks';
 })
 export class CheckboxComponent implements OnInit {
   @Input() task: any;
-  /* selectedtasks: Task[] = []; */
   
   constructor() { }
   
@@ -17,12 +16,18 @@ export class CheckboxComponent implements OnInit {
   }
   
   onSelect(event: any, task:Task){
-	  for(let i: number = 0; i < selectedTasks.length; i++){
-		  if(selectedTasks[i].id && task.id !== selectedTasks[i].id){
-			  selectedTasks.push(task);
-		  }
+	  
+	  const findIndex = (selectedtasks:Task): boolean => {
+		return selectedtasks.id === task.id;
 	  }
 	  
-	  console.log(selectedTasks)
+	  if(event.srcElement.checked){
+		  selectedTasks.push(task);
+	  }else if(!event.srcElement.checked){
+	  
+		const selectedTaskIndex: number = selectedTasks.findIndex(findIndex);
+		selectedTasks.splice(selectedTaskIndex, 1);
+	  }
+	  
   }
 }

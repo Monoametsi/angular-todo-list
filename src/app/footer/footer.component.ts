@@ -12,8 +12,9 @@ import { selectedTasks } from '../selected-tasks';
 })
 export class FooterComponent implements OnInit {
   task:Task[] = tasks;
-  selectedtask:Task[] = selectedTasks;
-  constructor() { }
+  selectedtasks:Task[] = selectedTasks;
+  
+  constructor(private servicesService: ServicesService) { }
 
   ngOnInit(): void {
   }
@@ -22,8 +23,23 @@ export class FooterComponent implements OnInit {
    
   text: string = "Remove Selected";
   
-  onClick(taskArr: Task[]){
-	  console.log(taskArr.length)
+  onClick(selectedTask: Task[]){
+	  const selectedtask2:Task[] = [];
+	  const removeSelectedTasks = (task: Task) => {
+		  this.servicesService.removeTask(task);
+	  }
+	  
+	  tasks.map((task: Task) => {
+		  this.selectedtasks.map((selectTask: Task) => {
+			  if(task === selectTask){
+				  selectedtask2.push(task);
+			  }
+		  })
+	  })
+	  
+	  if(selectedTask.length > 0){
+		selectedtask2.forEach(removeSelectedTasks);
+	  }
   }
   
 }
