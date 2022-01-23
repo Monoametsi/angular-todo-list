@@ -16,11 +16,10 @@ export class FooterComponent implements OnInit {
   
   constructor(private servicesService: ServicesService) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   faTimesIcon = faTimesCircle;
-   
+  
   text: string = "Remove Selected";
   
   onClick(selectedTask: Task[]){
