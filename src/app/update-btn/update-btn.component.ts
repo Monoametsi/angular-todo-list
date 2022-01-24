@@ -54,4 +54,10 @@ export class UpdateBtnComponent implements OnInit {
 	  });
   }
 
+  onEnter(event: any, task: Task){
+    if(event.key === 'Enter'){
+      this.updateTask(task);
+    }
+  }
+
 }

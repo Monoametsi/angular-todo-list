@@ -17,7 +17,7 @@
 
                 <div class="input-cont">
                     <label for="name">Task</label>
-                    <input type="text" formControlName="task" placeholder="Enter Task" id="task" name="task" class="input-field">
+                    <input type="text" (keydown)="onEnter($event, task)" formControlName="task" placeholder="Enter Task" id="task" name="task" class="input-field">
                 </div>
                 
                 <span></span>
